@@ -6,14 +6,18 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 	    Scanner kb = new Scanner(System.in);
-        FileWriter fw = new FileWriter("C:\\")
-        PrintWriter file = new PrintWriter("TruthTable.txt");
 
-        System.out.println("Enter the expression you would like a truth table for.");
+        PrintWriter file = new PrintWriter("TruthTable.txt");
+        boolean A, B;
+
+        System.out.println("Enter the expression you would like a truth table for using A and B.");
         String exp = kb.next();
 
-        System.out.println(exp);
+        file.write("A\tB\t" + exp);
 
+
+
+        file.close();
 
     }
 }
